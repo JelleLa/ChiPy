@@ -11,7 +11,7 @@ import chipy
 #==========================================================
 # METHOD(S)
 #==========================================================
-def simulate(env, generator, method: str = "Time", sim_time: float =60, lots_max: int = 1):
+def simulate(env, generator, method: str = "Time", sim_time: float =60, lots_max: int = 1) -> tuple:
 #----------------------------------------------------------
 # HELP
 #----------------------------------------------------------
@@ -55,3 +55,4 @@ def simulate(env, generator, method: str = "Time", sim_time: float =60, lots_max
         env.run()
     else:
         raise RuntimeError(f"ChiPy Error: {method} is an unsupported simulation method.")
+    return generator.t_in_list, generator.t_out_list, generator.lots_list

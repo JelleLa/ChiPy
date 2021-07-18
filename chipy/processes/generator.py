@@ -41,6 +41,11 @@ class Generator(object):
         self.t_in_list	= []
         self.t_out_list	= []
         self.lots_list	= []
+    def envcaller(self, lot) -> None:
+        self.t_in_list.append([lot[0], self.env.now])
+        yield self.env.process(self.runenv(self.env, lot, self.stations))
+        self.t_out_list.append([lot[0], self.env.now])
+        self.lots_list.append(lot)
     def gen(self, env, method = "Time", lots_max = None) -> None:
         if (method == "Time"):
             cond = lambda: 1
@@ -57,9 +62,7 @@ class Generator(object):
         lot_ID: int = 0  
         while (cond()): 
             lot = (lot_ID, self.priority())
-            self.t_in_list.append([lot[0], self.env.now])	
-            self.env.process(self.runenv(env, lot, self.stations))
-            self.t_out_list.append([lot[0], self.env.now])
-            self.lots_list.append(lot)
+            self.env.process(self.envcaller(lot))
+            #self.env.process(self.runenv(env, lot, self.stations))
             yield env.timeout(self.ta()) 
             lot_ID += 1
