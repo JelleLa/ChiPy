@@ -32,12 +32,15 @@ class Generator(object):
         Lambda function describing the distribution of priority levels. Default: lambda: 0.
     '''
     def __init__(self, env, ta, runenv, lots, stations, priority = lambda: 0):
-        self.env = env  
-        self.ta = ta 
-        self.stations = stations
-        self.runenv = runenv
-        self.lots = lots
-        self.priority = priority
+        self.env	    = env  
+        self.ta		    = ta 
+        self.stations	= stations
+        self.runenv	    = runenv
+        self.lots	    = lots
+        self.priority	= priority
+        self.t_in_list	= []
+        self.t_out_list	= []
+        self.lots_list	= []
     def gen(self, env, method = "Time", lots_max = None) -> None:
         if (method == "Time"):
             cond = lambda: 1
@@ -54,10 +57,9 @@ class Generator(object):
         lot_ID: int = 0  
         while (cond()): 
             lot = (lot_ID, self.priority())
+            self.t_in_list.append([lot[0], self.env.now])	
             self.env.process(self.runenv(env, lot, self.stations))
+            self.t_out_list.append([lot[0], self.env.now])
+            self.lots_list.append(lot)
             yield env.timeout(self.ta()) 
             lot_ID += 1
-        
-
-        
-
