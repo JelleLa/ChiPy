@@ -1,5 +1,5 @@
 #! usr/bin/python3
-ver = "20210620"
+ver = "TESTING"
 print(f"ChiPy version {ver} imported succesfully.\nUse Python's help() (e.g. help(chipy.Station.proc)) for additional information of ChiPy\ncomponents.\n ")
 from .core.environment import environment
 from .functions.visualisation.flowtimediagram import flowtime_diagram
