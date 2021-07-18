@@ -13,3 +13,4 @@ sudo pip install simpy numpy matplotlib
 ## Plans for next release
 * Move lot tracking from the run environment to the simulation method
 * Make it easier to call a station in the run environment
+* Introduce stochasticity to the `mf` and `mr` parameters
