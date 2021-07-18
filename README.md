@@ -3,7 +3,7 @@ ChiPy is a Python package based on SimPy to swiftly write discrete-event simulat
 Written by J. Langedijk (j.langedijk@student.tue.nl) 
 ## Python Dependencies
 `simpy`,`math`,`numpy`,`matplotlib.pyplot`
-All can be installed (on Linux) using `pip` on Linux:
+All can be installed (on Linux) using `pip`:
 ```
 sudo pip install simpy numpy matplotlib
 ```
