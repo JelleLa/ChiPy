@@ -1,6 +1,10 @@
 # ChiPy
 ChiPy is a Python package based on SimPy to swiftly write discrete-event simulations of production lines.  
 Written by J. Langedijk (j.langedijk@student.tue.nl) 
+
+## Wiki
+Further information can be found in the projects [wiki](https://github.com/JelleLa/ChiPy/wiki)
+
 ## Python Dependencies
 `simpy`,`math`,`numpy`,`matplotlib.pyplot`
 All can be installed (on Linux) using `pip`:
