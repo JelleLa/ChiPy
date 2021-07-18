@@ -63,6 +63,5 @@ class Generator(object):
         while (cond()): 
             lot = (lot_ID, self.priority())
             self.env.process(self.envcaller(lot))
-            #self.env.process(self.runenv(env, lot, self.stations))
             yield env.timeout(self.ta()) 
             lot_ID += 1

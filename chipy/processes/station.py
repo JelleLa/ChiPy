@@ -6,15 +6,12 @@
 #==========================================================
 # REQUIRED IMPORTS
 #==========================================================
-
 import numpy as np
 import chipy as cp
 import simpy
-
 #==========================================================
 # CLASS(ES)
 #==========================================================
-
 class Station(object):
 #----------------------------------------------------------
 # HELP
@@ -181,7 +178,7 @@ class Station(object):
         self.num_processed += 1
         self.bs()
         self.wip()
-        self.ocr()      
+        self.ocr() 
 #----------------------------------------------------------
 # FAIL BEHAVIOUR
 #----------------------------------------------------------
@@ -208,19 +205,3 @@ class Station(object):
             self.t_fix  = self.env.now
             self.fix_list.append(self.t_fix)
             self.broken = False
-            
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-

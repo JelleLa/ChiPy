@@ -1,6 +1,8 @@
 #! usr/bin/python3
 ver = "TESTING"
 print(f"ChiPy version {ver} imported succesfully.\nUse Python's help() (e.g. help(chipy.Station.proc)) for additional information of ChiPy\ncomponents.\n ")
+if (ver == "TESTING"):
+    print(f"Note that you are using a \"TESTING\" version of ChiPy! Things are likely unstable and some functionality might be broken.\n")
 from .core.environment import environment
 from .functions.visualisation.flowtimediagram import flowtime_diagram
 from .functions.visualisation.stationstats import station_stats
