@@ -1,5 +1,7 @@
 <img src="https://github.com/JelleLa/ChiPy/blob/main/graphics/ChiPyBlackBG.png" width=50% height=50%>
 ChiPy is a Python package based on SimPy to swiftly write discrete-event simulations of production lines.
+<img src="https://github.com/JelleLa/ChiPy/blob/main/graphics/mwe.png">
+_ChiPy running on openSUSE Linux_
 
 ## Wiki
 Further information can be found in the project's [wiki](https://github.com/JelleLa/ChiPy/wiki).
