@@ -1,8 +1,6 @@
 <img src="https://github.com/JelleLa/ChiPy/blob/main/graphics/ChiPyBlackBG.png" width=50% height=50%>
 ChiPy is a Python package based on SimPy to swiftly write discrete-event simulations of production lines.
 
-
-
 ## Wiki
 Further information can be found in the project's [wiki](https://github.com/JelleLa/ChiPy/wiki).
 
@@ -17,3 +15,7 @@ sudo pip install simpy numpy matplotlib pandas
 * Make it easier to call a station in the run environment
 * Introduce stochasticity to the `mf` and `mr` parameters
 * Remove the requirement of a "stations dictionary" for post processing
+
+## Special Thanks
+* See the preface of the thesis
+* Luuk van der Kerk for designing the logo
