@@ -4,6 +4,7 @@ ChiPy is a Python package based on _SimPy_ to swiftly write discrete-event simul
 ***
 <img src="https://github.com/JelleLa/ChiPy/blob/main/graphics/mwe.png">
 _ChiPy running on openSUSE Linux_
+
 ***
 
 ## Wiki
