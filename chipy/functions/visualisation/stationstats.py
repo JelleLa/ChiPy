@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 #==========================================================
 # MODULE(S)
 #==========================================================
-def station_stats(stations, station_name: str, sim_time: float, show_avg: bool = False, savename: str = "stats.png", title: str = "Statistics of ", xlabel: str = "Time", color: str = "lightblue") -> None:
+def station_stats(station, station_name: str, sim_time: float, show_avg: bool = False, savename: str = "stats.png", title: str = "Statistics of ", xlabel: str = "Time", color: str = "lightblue") -> None:
 #----------------------------------------------------------
 # HELP
 #----------------------------------------------------------
@@ -49,7 +49,6 @@ def station_stats(stations, station_name: str, sim_time: float, show_avg: bool =
 #----------------------------------------------------------
 # FIGURE INITIATION 
 #----------------------------------------------------------
-    station = stations[station_name]
     fig, ax = plt.subplots(2,2) 
     if (title == "Statistics of "):
         title = title + station_name
