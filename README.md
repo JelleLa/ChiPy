@@ -14,7 +14,6 @@ sudo pip install simpy numpy matplotlib pandas
 * Move lot tracking from the run environment to the simulation method
 * Make it easier to call a station in the run environment
 * Introduce stochasticity to the `mf` and `mr` parameters
-* Remove the requirement of a "stations dictionary" for post processing
 
 ## Special Thanks
 * See the preface of the thesis
