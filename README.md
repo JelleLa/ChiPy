@@ -1,3 +1,4 @@
+<img src="https://github.com/JelleLa/ChiPy/blob/main/graphics/ChiPyBlackBG.png" width=50% height=50%>
 ![logo](/graphics/ChiPyBlackBG.png | width=100)
 ChiPy is a Python package based on SimPy to swiftly write discrete-event simulations of production lines.
 
