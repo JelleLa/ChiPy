@@ -1,5 +1,5 @@
 <img src="https://github.com/JelleLa/ChiPy/blob/main/graphics/ChiPyBlackBG.png" width=50% height=50%>
-ChiPy is a Python package based on SimPy to swiftly write discrete-event simulations of production lines.
+ChiPy is a Python package based on _SimPy_ to swiftly write discrete-event simulations of production lines. Since it is just a package, it can be used on any operating system, as long as the _Python_ install meets the dependencies.
 <img src="https://github.com/JelleLa/ChiPy/blob/main/graphics/mwe.png">
 _ChiPy running on openSUSE Linux_
 
