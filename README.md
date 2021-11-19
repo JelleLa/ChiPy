@@ -19,8 +19,10 @@ sudo pip install simpy numpy matplotlib pandas
 ```
 ## Plans for next release
 * Move lot tracking from the run environment to the simulation method
+* Add general statistics calcuations, like best/worst case scenario troughputs et cetera.
 * Make it easier to call a station in the run environment
 * Introduce stochasticity to the `mf` and `mr` parameters
+
 
 ## Special Thanks
 * See the preface of the thesis
